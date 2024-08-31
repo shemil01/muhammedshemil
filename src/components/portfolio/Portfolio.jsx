@@ -5,26 +5,20 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "React e-commerce website",
-    img: "/plashoe.png", // Corrected path
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quod soluta error, corrupti nostrum accusantium eaque dolore maxime velit distinctio neque quis assumenda fugiat excepturi modi sapiente consequatur nesciunt? Nulla.",
+    title: "Fullstack e-commerce website",
+    img: "/plashoe.png", 
+    desc: "Developed a full-fledged e-commerce platform using the MERN stack, improving UI to reduce bounce rates by 50% and increase conversions by 20%. Implemented secure user authentication with JWT and built a scalable backend with Node.js, Express.js, and MongoDB.",
   },
   {
     id: 2,
-    title: "Plashoe e-commerce website",
-    img: "/plashoe.png", // Corrected path
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quod soluta error, corrupti nostrum accusantium eaque dolore maxime velit distinctio neque quis assumenda fugiat excepturi modi sapiente consequatur nesciunt? Nulla.",
+    title: "Spotify clone",
+    img: "/spotify.png",  
+    desc:"Developed a Spotify clone from scratch using the MERN stack and Tailwind CSS, replicating core features like JWT-based authentication, file uploads with Multer, and cloud storage via Cloudinary. Created playlist management, advanced search with letter suggestions, and built an admin dashboard for user and content management."
   },
   {
     id: 3,
     title: "Full stack e-commerce website",
-    img: "/plashoe.png", // Corrected path
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quod soluta error, corrupti nostrum accusantium eaque dolore maxime velit distinctio neque quis assumenda fugiat excepturi modi sapiente consequatur nesciunt? Nulla.",
-  },
-  {
-    id: 4,
-    title: "MERN e-commerce website",
-    img: "/plashoe.png", // Corrected path
+    img: "/plashoe.png", 
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quod soluta error, corrupti nostrum accusantium eaque dolore maxime velit distinctio neque quis assumenda fugiat excepturi modi sapiente consequatur nesciunt? Nulla.",
   },
 ];
@@ -33,13 +27,12 @@ const Single = ({ item }) => {
   const ref = useRef();
   const { scrollYProgress } = useScroll({
     target: ref,
-    // offset: ["start start", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-300,300]); // Ensure `y` is used
+  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section >
+    <section>
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>

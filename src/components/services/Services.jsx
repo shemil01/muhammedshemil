@@ -2,43 +2,45 @@ import { useRef } from "react";
 import "./services.scss";
 import { motion,useInView } from "framer-motion";
 
+
 const variants = {
-    initial: {
-      x: -500,
-      y: 100,
-      opacity: 0,
+  initial: {
+    x: -500,
+    y: 100,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
     },
-    animate: {
-      x: 0,
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 1,
-        staggerChildren: 0.1,
-      },
+  },
+  exit: {
+    opacity: 0,
+    x: -500,
+    transition: {
+      duration: 0.5,
     },
-    exit: {
-      opacity: 0,
-      x: -500,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  };
+  },
+};
   
 const Services = () => {
     const ref = useRef()
-    const isInView = useInView(ref, { threshold: 0.2, triggerOnce: false });
-  
+    const isInView = useInView(ref, { threshold: 0.1, triggerOnce: false });
+    
+    const isMobile = window.innerWidth <= 768; // You can adjust this breakpoint
 
   return (
     <motion.div
-      className="services"
-      variants={variants}
-      initial="initial"
-      animate={isInView ? "animate" : "initial"} // Triggers animation on scroll in
-      exit="exit" // Optional exit animation when scrolling out
-      ref={ref} // Reference to the element for scroll detection
+    className="services"
+    variants={variants}
+    initial="initial"
+    animate={isInView || isMobile ? "animate" : "initial"} // Force animation on mobile
+    exit="exit"
+    ref={ref}
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
