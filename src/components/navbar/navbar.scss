@@ -1,20 +1,31 @@
-.navbar{
-   height: 100px; 
-   .wrapper{
-    max-width:1366px;
+@import "../../app.scss";
+
+.navbar {
+  height: 100px;
+  .wrapper {
+    max-width: 1366px;
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content:space-around ;
-    
+    justify-content: space-around;
     height: 100%;
+  
+    @include mobile{
+     justify-content: flex-end;
+     padding-right: 10px;
+    }
 
-    span{
-        font-weight: bold;
+
+    span {
+      font-weight: bold;
+
+      @include mobile {
+        display: none;
+      }
     }
-    .social{
-       display: flex;
-       gap: 20px; 
+    .social {
+      display: flex;
+      gap: 20px;
     }
-   }
+  }
 }
