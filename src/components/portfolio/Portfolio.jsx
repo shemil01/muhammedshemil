@@ -7,18 +7,21 @@ const items = [
     id: 1,
     title: "Fullstack e-commerce website",
     img: "/plashoe.png", 
+    source:"https://github.com/shemil01/plashoe-frontend",
     desc: "Developed a full-fledged e-commerce platform using the MERN stack, improving UI to reduce bounce rates by 50% and increase conversions by 20%. Implemented secure user authentication with JWT and built a scalable backend with Node.js, Express.js, and MongoDB.",
   },
   {
     id: 2,
     title: "Spotify clone",
     img: "/spotify.png",  
+    source:" https://github.com/shemil01/spotify-client",
     desc:"Developed a Spotify clone from scratch using the MERN stack and Tailwind CSS, replicating core features like JWT-based authentication, file uploads with Multer, and cloud storage via Cloudinary. Created playlist management, advanced search with letter suggestions, and built an admin dashboard for user and content management."
   },
   {
     id: 3,
     title: " E-commerce backend",
     img: "/backend.png", 
+    source:"https://github.com/shemil01/backend-project",
     desc: 'Developed an e-commerce backend using Node.js, Express, and MongoDB. Implemented RESTful APIs for product management, user authentication, order processing, and payment integration. Ensured secure transactions with JWT and encryption.'
   },
 ];
@@ -41,7 +44,7 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+           <a href={item.source}> <button>See suource code</button></a>
           </motion.div>
         </div>
       </div>
