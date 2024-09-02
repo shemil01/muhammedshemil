@@ -33,19 +33,7 @@ const Parallax = ({ type }) => {
 
   const totalWidthPercentage = skills.length * 100;
 
-  // const sliderVariants = {
-  //   initial: {
-  //     x: 0,
-  //   },
-  //   animate: {
-  //     x: `-${totalWidthPercentage}%`, 
-  //     transition: {
-  //       repeat: Infinity,
-  //       repeatType:"reverse",
-  //       duration: 20,
-  //     },
-  //   },
-  // };
+
   const sliderVariants = {
     initial: {
       x: 0,
@@ -53,12 +41,12 @@ const Parallax = ({ type }) => {
     },
     animate: {
       x: `-${totalWidthPercentage}%`, 
-      rotate: 360, // Rotate a full circle
+      rotate: 360, 
       transition: {
         repeat: Infinity,
-        repeatType: "mirror", // Continuously rotate
-        duration: 10, // Adjust speed of rotation
-        ease: "linear", // Smooth and continuous rotation
+        repeatType: "mirror", 
+        duration: 10, 
+        ease: "linear", 
       },
     },
   };
