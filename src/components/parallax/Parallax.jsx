@@ -33,20 +33,35 @@ const Parallax = ({ type }) => {
 
   const totalWidthPercentage = skills.length * 100;
 
+  // const sliderVariants = {
+  //   initial: {
+  //     x: 0,
+  //   },
+  //   animate: {
+  //     x: `-${totalWidthPercentage}%`, 
+  //     transition: {
+  //       repeat: Infinity,
+  //       repeatType:"reverse",
+  //       duration: 20,
+  //     },
+  //   },
+  // };
   const sliderVariants = {
     initial: {
       x: 0,
+      rotate: 0,
     },
     animate: {
-      x: `-${totalWidthPercentage}%`, // Dynamically set the end point based on skills count
+      x: `-${totalWidthPercentage}%`, 
+      rotate: 360, // Rotate a full circle
       transition: {
         repeat: Infinity,
-        repeatType: "mirror",
-        duration: 20,
+        repeatType: "mirror", // Continuously rotate
+        duration: 10, // Adjust speed of rotation
+        ease: "linear", // Smooth and continuous rotation
       },
     },
   };
-
 
   return (
     <div
@@ -59,12 +74,10 @@ const Parallax = ({ type }) => {
             : "linear-gradient(180deg, #111132, #505064)",
       }}
     >
-      {/* Adjusted h1 positioning */}
-      {/* <motion.h1 style={{ y: yText }}>Skills</motion.h1> */}
       
 
       <motion.div className="skills-container">
-      <h1>SKILLS </h1>
+      <motion.h1 style={{ y: yText }}>Skills</motion.h1>
         <motion.div className="skills">
           {skills.map((item) => (
             <motion.div
@@ -74,12 +87,7 @@ const Parallax = ({ type }) => {
               initial="initial"
               animate="animate"
 
-              // whileHover={{ scale: 1.2, rotate: 90 }}
-              // whileTap={{
-              //   scale: 0.8,
-              //   rotate: -90,
-              //   borderRadius: "100%"
-              // }}
+             
             >
               <img src={item.img} alt={item.skill} />
               <p>{item.skill}</p>
