@@ -24,6 +24,7 @@ const App = () => {
       <Contact />
     </section>
     <ToastContainer />
+    
   </div>;
 };
 

@@ -24,13 +24,13 @@ const Navbar = () => {
           <a href="">
             <FaFacebookSquare />
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/sshemiil?igsh=azVwYmxscXdqYjNm">
             <FaInstagram />
           </a>
-          <a href="">
+          <a href="https://github.com/shemil01">
             <FaGithub />
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/in/muhammed-shemil-mk/">
             <FaLinkedin />
           </a>
         </div>

@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import "./services.scss";
-import { motion,useInView } from "framer-motion";
-
+import { motion, useInView } from "framer-motion";
 
 const variants = {
   initial: {
@@ -26,21 +25,22 @@ const variants = {
     },
   },
 };
-  
+
 const Services = () => {
-    const ref = useRef()
-    const isInView = useInView(ref, { threshold: 0.1, triggerOnce: false });
-    
-    const isMobile = window.innerWidth <= 768; // You can adjust this breakpoint
+  const ref = useRef();
+  const isInView = useInView(ref, { threshold: 0.1, triggerOnce: false });
+
+  const isMobile = window.innerWidth <= 768; // You can adjust this breakpoint
 
   return (
     <motion.div
-    className="services"
-    variants={variants}
-    initial="initial"
-    animate={isInView || isMobile ? "animate" : "initial"} // Force animation on mobile
-    exit="exit"
-    ref={ref}
+    id="services"
+      className="services"
+      variants={variants}
+      initial="initial"
+      animate={isInView || isMobile ? "animate" : "initial"} // Force animation on mobile
+      exit="exit"
+      ref={ref}
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
@@ -54,12 +54,13 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="People" />
           <h1>
-            <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
+            <motion.b whileHover={{ color: "orange" }}>Unique</motion.b> Ideas
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.
+            <motion.b whileHover={{ color: "orange" }}>For Your</motion.b>{" "}
+            Business.
           </h1>
           <button>WHAT WE DO?</button>
         </div>
@@ -70,57 +71,49 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Web designing</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            accusantium porro, quas velit iure consequuntur at asperiores ipsum
-            eveniet eligendi nihil atque nam impedit inventore aspernatur
-            quibusdam totam aperiam neque.
+            Crafting visually appealing and user-friendly websites that provide
+            an exceptional user experience. We combine creativity with modern
+            technologies like HTML, CSS, and JavaScript, ensuring responsive
+            designs that perform seamlessly across all devices. Our approach
+            integrates intuitive layouts, engaging visuals, and smooth
+            interactions to bring your vision to life on the web.
           </p>
-          <button>Go</button>
+          <button><a href="#contact">Go</a></button>
         </motion.div>
 
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Web developing</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            accusantium porro, quas velit iure consequuntur at asperiores ipsum
-            eveniet eligendi nihil atque nam impedit inventore aspernatur
-            quibusdam totam aperiam neque.
+            Building dynamic and scalable web applications using the MERN stack
+            (MongoDB, Express, React, Node.js) and Tailwind CSS for efficient,
+            responsive design. Our solutions focus on high performance, seamless
+            user experiences, and scalable backends to meet the growing demands
+            of your business.
           </p>
-          <button>Go</button>
+          <button><a href="#contact">Go</a></button>
         </motion.div>
 
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>E-comerce development</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            accusantium porro, quas velit iure consequuntur at asperiores ipsum
-            eveniet eligendi nihil atque nam impedit inventore aspernatur
-            quibusdam totam aperiam neque.
+            Building robust, scalable e-commerce platforms designed to enhance
+            your online business. Our solutions include seamless user
+            experiences, secure payment gateways, inventory management, and
+            responsive designs to ensure your store performs flawlessly on all
+            devices.
           </p>
-          <button>Go</button>
+          <button><a href="#contact">Go</a></button>
         </motion.div>
 
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            accusantium porro, quas velit iure consequuntur at asperiores ipsum
-            eveniet eligendi nihil atque nam impedit inventore aspernatur
-            quibusdam totam aperiam neque.
-          </p>
-          <button>Go</button>
-        </motion.div>
+       
       </motion.div>
     </motion.div>
   );

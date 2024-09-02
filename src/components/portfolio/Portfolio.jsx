@@ -17,9 +17,9 @@ const items = [
   },
   {
     id: 3,
-    title: "Full stack e-commerce website",
-    img: "/plashoe.png", 
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quod soluta error, corrupti nostrum accusantium eaque dolore maxime velit distinctio neque quis assumenda fugiat excepturi modi sapiente consequatur nesciunt? Nulla.",
+    title: " E-commerce backend",
+    img: "/backend.png", 
+    desc: 'Developed an e-commerce backend using Node.js, Express, and MongoDB. Implemented RESTful APIs for product management, user authentication, order processing, and payment integration. Ensured secure transactions with JWT and encryption.'
   },
 ];
 
@@ -62,7 +62,7 @@ const Portfolio = () => {
   });
 
   return (
-    <div className="portfolio" ref={ref}>
+    <div className="portfolio" id="project" ref={ref}>
       <div className="progress">
         <h1>Featured Works</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
