@@ -22,7 +22,7 @@ const items = [
     title: " E-commerce backend",
     img: "/backend.png", 
     source:"https://github.com/shemil01/backend-project",
-    desc: 'Developed an e-commerce backend using Node.js, Express, and MongoDB. Implemented RESTful APIs for product management, user authentication, order processing, and payment integration. Ensured secure transactions with JWT and encryption.'
+  desc:"Developed a robust e-commerce backend using Node.js, Express, and MongoDB. Designed and implemented RESTful APIs for managing products, user authentication, order processing, and payment integration. Ensured secure transactions with JWT-based authentication and encryption."
   },
 ];
 
