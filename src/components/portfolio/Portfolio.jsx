@@ -7,14 +7,14 @@ const items = [
     id: 1,
     title: "Fullstack e-commerce website",
     img: "/plashoe.png", 
-    source:"https://github.com/shemil01/plashoe-frontend",
+    source:"https://react-e-commerce-project-eight.vercel.app/",
     desc: "Developed a full-fledged e-commerce platform using the MERN stack, improving UI to reduce bounce rates by 50% and increase conversions by 20%. Implemented secure user authentication with JWT and built a scalable backend with Node.js, Express.js, and MongoDB.",
   },
   {
     id: 2,
     title: "Spotify clone",
     img: "/spotify.png",  
-    source:" https://github.com/shemil01/spotify-client",
+    source:" https://spotify-client-psi-black.vercel.app",
     desc:"Developed a Spotify clone from scratch using the MERN stack and Tailwind CSS, replicating core features like JWT-based authentication, file uploads with Multer, and cloud storage via Cloudinary. Created playlist management, advanced search with letter suggestions, and built an admin dashboard for user and content management."
   },
   {
