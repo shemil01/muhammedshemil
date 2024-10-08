@@ -43,16 +43,12 @@
   .formContainer {
     flex: 1;
     position: relative;
-    overflow-y: auto; // Allow vertical scrolling
     
-    @include mobile {
-      height: 100%; // Ensure full height on mobile
+    @include mobile{
+        width: 100%;
       padding: 50px;
-      margin-top: -30px; // Moved up the form
-      padding-bottom: 100px; // Extra padding to keep button visible
-    }
-  
-  
+      margin-top: -30px; /* Moved up the form */
+           }
 
     .phoneSvg {
       stroke: orange;
@@ -65,12 +61,12 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-
+      
       @include mobile {
         margin-bottom: 45px;
         height: auto;
-      }
-
+       }
+ 
       input,
       textarea {
         padding: 20px;
@@ -78,15 +74,14 @@
         border: 1px solid white;
         color: white;
         border-radius: 5px;
-        font-size: 16px; // Prevent zoom
 
         @include mobile {
           padding: 10px;
         }
       }
-
       button {
         padding: 20px;
+        // border-radius: 50px;
         border: none;
         background-color: orange;
         cursor: pointer;

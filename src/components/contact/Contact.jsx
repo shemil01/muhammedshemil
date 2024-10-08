@@ -22,7 +22,6 @@ const variants = {
 const Contact = () => {
   const ref = useRef();
   const formRef = useRef();
-  const inputRefs = useRef([]);
 
   const isInView = useInView(ref, { margin: "-100px" });
 
@@ -35,7 +34,7 @@ const Contact = () => {
       })
       .then(
         (result) => {
-          toast.success("Message sent successfully");
+          toast.success("Message sending successful");
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -43,9 +42,12 @@ const Contact = () => {
       );
   };
 
-  const handleFocus = (index) => {
-    // Smoothly scroll to the focused input when it's focused
-    inputRefs.current[index].scrollIntoView({ behavior: "smooth", block: "end" });
+  const handleFocus = () => {
+    // Smoothly scroll to the form when input is focused
+    setTimeout(() => {
+      const formContainer = formRef.current;
+      formContainer.scrollIntoView({ behavior: "smooth", block: "end" });
+    }, 300); // Adjust timeout as needed
   };
 
   return (
@@ -107,23 +109,20 @@ const Contact = () => {
             required
             placeholder="Name"
             name="name"
-            onFocus={() => handleFocus(0)}
-            ref={(el) => (inputRefs.current[0] = el)}
+            onFocus={handleFocus}
           />
           <input
             type="email"
             required
             placeholder="Email"
             name="email"
-            onFocus={() => handleFocus(1)}
-            ref={(el) => (inputRefs.current[1] = el)}
+            onFocus={handleFocus}
           />
           <textarea
             rows={8}
             placeholder="Message"
             name="message"
-            onFocus={() => handleFocus(2)}
-            ref={(el) => (inputRefs.current[2] = el)}
+            onFocus={handleFocus}
           />
           <button type="submit">Submit</button>
         </motion.form>
