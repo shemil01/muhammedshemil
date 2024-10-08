@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import "./contact.scss";
 import { useInView, motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
@@ -34,22 +34,25 @@ const Contact = () => {
       })
       .then(
         (result) => {
-          toast.success("Message sending successfull");
+          toast.success("Message sending successful");
         },
         (error) => {
           console.log("FAILED...", error.text);
         }
       );
   };
-  const handleFocus = (e) => {
+
+  const handleFocus = () => {
+    // Smoothly scroll to the form when input is focused
     setTimeout(() => {
-      e.target.scrollIntoView({ behavior: "smooth", block: "center" });
-    }, 300); // Adjust the timeout as needed
+      const formContainer = formRef.current;
+      formContainer.scrollIntoView({ behavior: "smooth", block: "end" });
+    }, 300); // Adjust timeout as needed
   };
 
   return (
     <motion.div
-    id="contact"
+      id="contact"
       ref={ref}
       className="contact"
       variants={variants}
@@ -64,7 +67,7 @@ const Contact = () => {
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>
-          <span>Mankulangara(H) chekiriyan moochi ,malappuram,kerala</span>
+          <span>Mankulangara(H) Chekiriyan Moochi, Malappuram, Kerala</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
@@ -101,10 +104,27 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 3, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name" />
-          <input type="email" required placeholder="email" name="email" />
-          <textarea onFocus={handleFocus} rows={8} placeholder="Message" name="message" />
-          <button>Submit</button>
+          <input
+            type="text"
+            required
+            placeholder="Name"
+            name="name"
+            onFocus={handleFocus}
+          />
+          <input
+            type="email"
+            required
+            placeholder="Email"
+            name="email"
+            onFocus={handleFocus}
+          />
+          <textarea
+            rows={8}
+            placeholder="Message"
+            name="message"
+            onFocus={handleFocus}
+          />
+          <button type="submit">Submit</button>
         </motion.form>
       </div>
     </motion.div>
