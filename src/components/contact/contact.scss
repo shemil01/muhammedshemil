@@ -40,18 +40,19 @@
       font-weight: 300;
     }
   }
-
   .formContainer {
     flex: 1;
     position: relative;
-    overflow-y: auto; // Allow scrolling
+    overflow-y: auto; // Allow vertical scrolling
     
     @include mobile {
-      width: 100%;
+      height: 100%; // Ensure full height on mobile
       padding: 50px;
       margin-top: -30px; // Moved up the form
       padding-bottom: 100px; // Extra padding to keep button visible
     }
+  
+  
 
     .phoneSvg {
       stroke: orange;
