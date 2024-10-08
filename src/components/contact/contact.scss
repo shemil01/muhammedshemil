@@ -74,7 +74,7 @@
         border: 1px solid white;
         color: white;
         border-radius: 5px;
-
+        font-size: 16px; // Set a minimum font size
         @include mobile {
           padding: 10px;
         }

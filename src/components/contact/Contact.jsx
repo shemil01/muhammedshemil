@@ -41,6 +41,12 @@ const Contact = () => {
         }
       );
   };
+  const handleFocus = (e) => {
+    setTimeout(() => {
+      e.target.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 300); // Adjust the timeout as needed
+  };
+
   return (
     <motion.div
     id="contact"
@@ -97,7 +103,7 @@ const Contact = () => {
         >
           <input type="text" required placeholder="Name" name="name" />
           <input type="email" required placeholder="email" name="email" />
-          <textarea rows={8} placeholder="Message" name="message" />
+          <textarea onFocus={handleFocus} rows={8} placeholder="Message" name="message" />
           <button>Submit</button>
         </motion.form>
       </div>
