@@ -14,7 +14,7 @@
 
     @include mobile{
       font-size: 14px;
-      padding-top: 20px;
+      padding-top: 50px;
    padding-left: 30px;
       // padding-top: calc(100vh - 100px);
          }
@@ -47,7 +47,7 @@
 
       @include mobile {
         flex-direction: column;
-        margin-top: 100px;
+        margin-top: 200px;
         padding: 10px;
         margin-left: 10px;
         margin-right: 10px;
