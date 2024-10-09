@@ -5,22 +5,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const Parallax = ({ type }) => {
   
 
-  const skills = [
-    { id: 1, skill: "HTML", img: "/html5.png" },
-    { id: 2, skill: "CSS", img: "/css3.png" },
-    { id: 3, skill: "JavaScript", img: "/javascript.png" },
-    { id: 4, skill: "React", img: "/react.svg" },
-    { id: 5, skill: "Bootstrap", img: "/bootstrap.svg" },
-    { id: 6, skill: "Redux", img: "/redux.png" },
-    { id: 7, skill: "Tailwind css", img: "/tailwindcss.svg" },
-    { id: 8, skill: "Express js", img: "/express.webp" },
-    { id: 9, skill: "Node js", img: "/nodejs.png" },
-    { id: 10, skill: "MongoDb", img: "/mongodb.svg" },
-    { id: 11, skill: "Jwt", img: "/jwt.png" },
-    { id: 12, skill: "Postman", img: "/postman.webp" },
-    { id: 13, skill: "Git Hub", img: "/gitHub.png" },
-    { id: 14, skill: "Nodemailer", img: "/nodemailer.png" },
-  ];
 
   const ref = useRef();
   const { scrollYProgress } = useScroll({
@@ -31,25 +15,8 @@ const Parallax = ({ type }) => {
   const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
 
-  const totalWidthPercentage = skills.length * 100;
 
 
-  const sliderVariants = {
-    initial: {
-      x: 0,
-      rotate: 0,
-    },
-    animate: {
-      x: `-${totalWidthPercentage}%`, 
-      rotate: 360, 
-      transition: {
-        repeat: Infinity,
-        repeatType: "mirror", 
-        duration: 10, 
-        ease: "linear", 
-      },
-    },
-  };
 
   return (
     <div

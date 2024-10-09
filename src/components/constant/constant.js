@@ -7,7 +7,7 @@ export const Skill_data = [
   },
   {
     skill_name: "Css",
-    Image: "/public/css3.png",
+    Image: "/css3.png",
     width: 80,
     height: 80,
   },
@@ -19,13 +19,13 @@ export const Skill_data = [
   },
   {
     skill_name: "Tailwind Css",
-    Image: "/public/tailwindcss.svg",
+    Image: "/tailwindcss.svg",
     width: 80,
     height: 80,
   },
   {
     skill_name: "React",
-    Image: "/public/react.svg",
+    Image: "/react.svg",
     width: 80,
     height: 80,
   },
@@ -74,7 +74,7 @@ export const Frontend_skill = [
   },
   {
     skill_name: "Bootstrap",
-    Image: "/public/bootstrap.svg",
+    Image: "/bootstrap.svg",
     width: 80,
     height: 80,
   },
@@ -95,19 +95,19 @@ export const Frontend_skill = [
 export const Backend_skill = [
   {
     skill_name: "Node js",
-    Image: "/public/nodejs.png",
+    Image: "/nodejs.png",
     width: 80,
     height: 80,
   },
   {
     skill_name: "Express js",
-    Image: "/public/express.webp",
+    Image: "/express.webp",
     width: 80,
     height: 80,
   },
   {
     skill_name: "Mongo db",
-    Image: "/public/mongodb.svg",
+    Image: "/mongodb.svg",
     width: 40,
     height: 40,
   },
