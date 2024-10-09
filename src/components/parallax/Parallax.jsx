@@ -67,20 +67,7 @@ const Parallax = ({ type }) => {
       <motion.div className="skills-container">
       <motion.h1 style={{ y: yText }}>Skills</motion.h1>
         <motion.div className="skills">
-          {skills.map((item) => (
-            <motion.div
-              key={item.id}
-              className="skill-item"
-              variants={sliderVariants}
-              initial="initial"
-              animate="animate"
-
-             
-            >
-              <img src={item.img} alt={item.skill} />
-              <p>{item.skill}</p>
-            </motion.div>
-          ))}
+          
         </motion.div>
       </motion.div>
 

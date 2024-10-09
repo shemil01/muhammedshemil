@@ -9,6 +9,7 @@ import Services from './components/services/Services';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Skills from './components/skills/Skills';
 
 const App = () => {
   return <div>
@@ -17,7 +18,10 @@ const App = () => {
     <Hero/>
     </section>
     <section id='Services'><Parallax type='services'/></section>
-    <section><Services/></section>
+    <section>
+      {/* <Services/> */}
+    <Skills/>
+    </section>
     {/* <section id='Portfolio'><Parallax type='portfolio' /></section> */}
    <Portfolio />
     <section id='Contact'>
