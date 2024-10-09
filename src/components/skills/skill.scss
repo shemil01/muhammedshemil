@@ -1,3 +1,6 @@
+@import "../../app.scss";
+
+
 .skills-section {
   display: flex;
   background-color: #090016;
@@ -27,19 +30,17 @@
 /* Add mobile view specific styles */
 @media (max-width: 768px) {
   .skills-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
-    gap: 1.25rem; /* Increase the gap between items */
-    margin-top: 0.5rem; /* Adjust top margin */
-    align-items: center;
-    justify-content: center;
+    padding-bottom: 10rem; /* Reduce padding on mobile */
+    padding-top: 2rem; /* Reduce top padding on mobile */
   }
+
+  
 
   /* Use grid layout for mobile */
   .skills-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 items per row */
-    gap: 0.75rem; /* Adjust gap on mobile */
+    gap: 3.75rem; /* Adjust gap on mobile */
     margin-top: 0.5rem; /* Adjust top margin */
     align-items: center;
     justify-content: center;

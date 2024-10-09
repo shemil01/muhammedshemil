@@ -32,7 +32,7 @@ const Parallax = ({ type }) => {
       
 
       <motion.div className="skills-container">
-      <motion.h1 style={{ y: yText }}>Skills</motion.h1>
+      <motion.h1 style={{ y: yText }}></motion.h1>
         <motion.div className="skills">
           
         </motion.div>

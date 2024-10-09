@@ -15,8 +15,8 @@ import SkillText from "./SkillText";
 const Skills = () => {
   return (
     <section id="skills" className="skills-section">
-      {/* <SkillText /> */}
-<h1>Skills</h1>
+      <SkillText />
+
       <div className="skills-container">
         {Skill_data.map((image, index) => (
           <SkillDataProvider
