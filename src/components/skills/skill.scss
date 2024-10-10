@@ -63,7 +63,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .background-video {
@@ -80,7 +80,7 @@
 .background-video video {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  // object-fit: cover;
 }
 @media (max-width: 768px) {
   .background-video {
