@@ -9,33 +9,7 @@
   justify-content: center;
   overflow: hidden;
 
-  .skills-container {
-    overflow: hidden;
-
-    h1 {
-      font-weight: bold;
-      color: blueviolet;
-
-      margin-left: 0;
-      text-align: center;
-    }
-    .skills {
-      display: flex; // Display skills in a horizontal row
-      width: fit-content;
-
-      .skill-item {
-        width: 150px;
-
-        height: 150px;
-        flex: 0 0 auto; // Prevent items from shrinking
-        margin-right: 20px;
-        img {
-          width: 80px;
-          height: 80px;
-        }
-      }
-    }
-  }
+  
 
   h1 {
     font-size: 100px;
