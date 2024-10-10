@@ -15,6 +15,10 @@
   padding-bottom: 20rem;
   padding-top: 5rem;
   transform: scale(0.9);
+  @include mobile {
+    padding-bottom: 10rem; /* Reduce padding on mobile */
+    padding-top: 2rem; 
+  }
 }
 
 .skills-container {
@@ -25,19 +29,7 @@
   margin-top: 1rem;
   gap: 1.25rem;
   align-items: center;
-}
-
-/* Add mobile view specific styles */
-@media (max-width: 768px) {
-  .skills-section {
-    padding-bottom: 10rem; /* Reduce padding on mobile */
-    padding-top: 2rem; /* Reduce top padding on mobile */
-  }
-
-  
-
-  /* Use grid layout for mobile */
-  .skills-container {
+  @include mobile {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 items per row */
     gap: 3.75rem; /* Adjust gap on mobile */
@@ -45,6 +37,11 @@
     align-items: center;
     justify-content: center;
   }
+}
+
+/* Add mobile view specific styles */
+@media (max-width: 768px) {
+ 
 
   .skills-container img {
     width: 60px; /* Reduce image size for mobile */
@@ -63,7 +60,6 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  // overflow: hidden;
 }
 
 .background-video {
@@ -75,22 +71,18 @@
   justify-content: center;
   background-size: cover;
   z-index: -10;
+  @include mobile {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
 }
 
 .background-video video {
   width: 100%;
   height: auto;
-  // object-fit: cover;
-}
-@media (max-width: 768px) {
-  .background-video {
-    height: 100vh; /* Ensures it takes full view height on mobile */
-    width: 100%;
-  }
-
-  .background-video video {
-    height: 100%; /* Fill the height of the container */
-    width: auto; /* Scale the width automatically */
-    object-fit: cover; /* Ensures the video fits the container on mobile */
+  @include mobile {
+    width: 550px;
+    height: 500px;
   }
 }
