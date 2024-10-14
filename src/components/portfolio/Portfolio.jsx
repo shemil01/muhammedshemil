@@ -55,13 +55,22 @@ const items = [
   {
     id: 3,
     title: " The Daily Biz",
-    img: "https://www.searchenginejournal.com/wp-content/uploads/2020/08/7-ways-a-blog-can-help-your-business-right-now-5f3c06b9eb24e.png",
+    img: "/blog.png",
     source: "https://github.com/shemil01/blog-app-nextjs",
     link: "https://the-daily-biz.vercel.app/blog",
     desc: "A blog app built using Next.js and TypeScript, featuring both dark mode and light mode for a personalized user experience. The app includes a convenient copy button for easily copying content. It’s designed to be fast, responsive, and user-friendly, with seamless navigation across posts.",
   },
+
   {
     id: 4,
+    title: " Social Media API",
+    img: "/socialmedia.webp",
+    source: "https://github.com/shemil01/social-media-api",
+    link: "https://github.com/shemil01/social-media-api",
+    desc: "Developed a social media API using Express.js, MongoDB, and JWT for user authentication. Features include user registration, friend requests, post creation, comments, and likes. Users can view a feed with posts from friends and non-friends where their friends have commented. Integrated Multer for profile picture uploads and efficient media handling.",
+  },
+  {
+    id: 5,
     title: " E-commerce backend",
     img: "/backend.png",
     link: "https://github.com/shemil01/backend-project",
