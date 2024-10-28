@@ -71,6 +71,14 @@ const items = [
   },
   {
     id: 5,
+    title: " AccuWeather",
+    img: "/weatherIcon.jpg",
+    source: "https://github.com/shemil01/weather",
+    link: "https://weather-kohl-seven-49.vercel.app/",
+    desc: "A dynamic weather app built with Next.js and TypeScript, offering real-time weather updates and a sleek, user-friendly interface. The app features a search bar for easy location lookup, animated backgrounds to match current conditions, and a forecast view to keep users prepared for upcoming weather. It’s optimized for responsiveness and supports both light and dark modes, ensuring a smooth experience across devices.",
+  },
+  {
+    id:6 ,
     title: " E-commerce backend",
     img: "/backend.png",
     link: "https://github.com/shemil01/backend-project",
