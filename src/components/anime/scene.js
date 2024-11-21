@@ -1,8 +1,8 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { ScrollControls } from "@react-three/drei";
-import MovingVehicle from './MovingVehicle';  // import the moving vehicle component
 import Loader from "./modal";
+import MovingRobo from "./Animation";
 // import Loader from './Loader'; // import loader for model loading
 
 const Scene = () => {
@@ -17,7 +17,7 @@ const Scene = () => {
         <ScrollControls damping={0.2} pages={2}>
         <mesh rotation={[0.5, 0.5, 0]}>
           
-          <MovingVehicle />
+          <MovingRobo />
         </mesh>
         </ScrollControls>
       </Suspense>

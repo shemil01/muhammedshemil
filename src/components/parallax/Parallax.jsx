@@ -3,7 +3,8 @@ import "./parallax.scss";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import MovingVehicle from "../anime/Animation";
+import MovingRobo from "../anime/Animation";
+
 
 const Parallax = ({ type }) => {
   const ref = useRef();
@@ -40,7 +41,7 @@ const Parallax = ({ type }) => {
         >
           <ambientLight intensity={0.5} />
           <directionalLight position={[10, 10, 10]} intensity={1} />
-          <MovingVehicle />
+          <MovingRobo />
           <OrbitControls
             enablePan={true}
             enableZoom={false}

@@ -4,7 +4,7 @@ import { useGLTF, useAnimations, OrbitControls } from "@react-three/drei";
 // Preload the GLTF model
 useGLTF.preload("/robot_playground.glb");
 
-export const MovingVehicle = () => {
+export const MovingRobo = () => {
   const group = useRef(null);
   const { scene, animations } = useGLTF("/robot_playground.glb");
   const { actions } = useAnimations(animations, scene);
@@ -67,4 +67,4 @@ export const MovingVehicle = () => {
   );
 };
 
-export default MovingVehicle;
+export default MovingRobo;
