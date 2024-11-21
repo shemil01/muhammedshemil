@@ -13,6 +13,9 @@ module.exports = {
   plugins: ['react-refresh'],
   rules: {
     "react/prop-types": "off",
+  
+      "react/no-unknown-property": ["error", { ignore: ["position", "rotation", "scale","intensity","object"] }],
+  
     "no-unused-vars": "warn",
     'react-refresh/only-export-components': [
       'warn',

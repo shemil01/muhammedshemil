@@ -1,6 +1,9 @@
-import { useRef } from "react";
+import React, { useRef } from "react";
 import "./parallax.scss";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import MovingVehicle from "../anime/Animation";
 
 const Parallax = ({ type }) => {
   const ref = useRef();
@@ -22,11 +25,29 @@ const Parallax = ({ type }) => {
             : "linear-gradient(180deg, #111132, #505064)",
       }}
     >
-      <motion.h1 style={{ y: yText }}>
-        {" "}
-        {type === "services" ? "What We Do?" : "What We Did?"}
-      </motion.h1>
+      <motion.h1 style={{ y: yText }}></motion.h1>
 
+      <div style={{ position: "relative", width: "100%", height: "500px" }}>
+        <Canvas
+          camera={{ position: [0, 2, 10], fov: 50 }}
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+          }}
+        >
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[10, 10, 10]} intensity={1} />
+          <MovingVehicle />
+          <OrbitControls
+            enablePan={true}
+            enableZoom={false}
+            enableRotate={true}
+          />
+        </Canvas>
+      </div>
       <motion.div className="mountains"></motion.div>
       <motion.div
         style={{
