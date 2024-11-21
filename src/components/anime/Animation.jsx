@@ -1,5 +1,5 @@
 import  { useRef, useEffect } from "react";
-import { useGLTF, useAnimations } from "@react-three/drei";
+import { useGLTF, useAnimations,OrbitControls } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 useGLTF.preload("/robot_playground.glb");

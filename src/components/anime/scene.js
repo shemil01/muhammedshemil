@@ -15,7 +15,10 @@ const Scene = () => {
       <directionalLight position={[-5, -5, -5]} intensity={4} />
       <Suspense fallback={<Loader />}>
         <ScrollControls damping={0.2} pages={2}>
+        <mesh rotation={[0.5, 0.5, 0]}>
+          
           <MovingVehicle />
+        </mesh>
         </ScrollControls>
       </Suspense>
     </Canvas>
