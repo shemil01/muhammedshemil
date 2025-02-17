@@ -43,8 +43,18 @@ const items = [
     link: " https://spotify-client-psi-black.vercel.app",
     desc: "Developed a Spotify clone from scratch using the MERN stack and Tailwind CSS, replicating core features like JWT-based authentication, file uploads with Multer, and cloud storage via Cloudinary. Created playlist management, advanced search with letter suggestions, and built an admin dashboard for user and content management.",
   },
+
   {
     id: 2,
+    title: "Digital Marketing & Web Development Agency",
+    img: "/zorvix.png",
+    source: "https://github.com/shemil01",
+    link: "https://www.zorvix.in/",
+    desc: "Developed a modern and responsive digital marketing & web development agency website using Next.js 15. Optimized performance for faster load times, improving user engagement by 40%. Integrated SEO best practices, dynamic content management, and secure authentication for enhanced user experience.",
+  },
+  
+  {
+    id: 3,
     title: " e-commerce website",
     img: "/plashoe.png",
     source: "https://github.com/shemil01/plashoe-frontend",
@@ -53,7 +63,7 @@ const items = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: " The Daily Biz",
     img: "/blog.png",
     source: "https://github.com/shemil01/blog-app-nextjs",
@@ -62,7 +72,7 @@ const items = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: " Social Media API",
     img: "/socialmedia.webp",
     source: "https://github.com/shemil01/social-media-api",
@@ -70,7 +80,7 @@ const items = [
     desc: "Developed a social media API using Express.js, MongoDB, and JWT for user authentication. Features include user registration, friend requests, post creation, comments, and likes. Users can view a feed with posts from friends and non-friends where their friends have commented. Integrated Multer for profile picture uploads and efficient media handling.",
   },
   {
-    id: 5,
+    id: 6,
     title: " AccuWeather",
     img: "https://www.creativefabrica.com/wp-content/uploads/2020/10/06/Kawaii-Cute-Weather-Vector-Clipart-Graphics-5893599-1.jpg",
     source: "https://github.com/shemil01/weather",
@@ -78,7 +88,7 @@ const items = [
     desc: "A dynamic weather app built with Next.js and TypeScript, offering real-time weather updates and a sleek, user-friendly interface. The app features a search bar for easy location lookup, animated backgrounds to match current conditions, and a forecast view to keep users prepared for upcoming weather.ensuring a smooth experience across devices.",
   },
   {
-    id:6 ,
+    id:7 ,
     title: " E-commerce backend",
     img: "/backend.png",
     link: "https://github.com/shemil01/backend-project",
