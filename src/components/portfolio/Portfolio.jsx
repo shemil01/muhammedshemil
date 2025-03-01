@@ -2,7 +2,6 @@ import { useRef } from "react";
 import "./portfolio.scss";
 import { motion, useScroll, useSpring } from "framer-motion";
 
-// animation
 const itemVariants = {
   initial: {
     x: 100,
@@ -35,8 +34,18 @@ const variants = {
 };
 
 const items = [
+
   {
     id: 1,
+    title: "Gallivant Charters Qatar",
+    img: "/gallivent.png",
+    source: "https://github.com/shemil01/",
+    link: "https://www.gallivantchartersqatar.com",
+    desc: "Developed a full-stack Next.js application for Gallivant Charters Qatar, a live yacht rental platform. Implemented an admin dashboard for managing bookings, users, and yacht details. Integrated secure authentication, real-time availability updates, and optimized performance for a seamless user experience."
+}
+,
+  {
+    id: 2,
     title: "Spotify clone",
     img: "/spotify.png",
     source: "https://github.com/shemil01/spotify-client",
@@ -45,7 +54,7 @@ const items = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: "Digital Marketing & Web Development Agency",
     img: "/zorvix.png",
     source: "https://github.com/shemil01",
@@ -54,7 +63,7 @@ const items = [
   },
   
   {
-    id: 3,
+    id: 4,
     title: " e-commerce website",
     img: "/plashoe.png",
     source: "https://github.com/shemil01/plashoe-frontend",
@@ -63,7 +72,7 @@ const items = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: " The Daily Biz",
     img: "/blog.png",
     source: "https://github.com/shemil01/blog-app-nextjs",
@@ -72,7 +81,7 @@ const items = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: " Social Media API",
     img: "/socialmedia.webp",
     source: "https://github.com/shemil01/social-media-api",
@@ -80,7 +89,7 @@ const items = [
     desc: "Developed a social media API using Express.js, MongoDB, and JWT for user authentication. Features include user registration, friend requests, post creation, comments, and likes. Users can view a feed with posts from friends and non-friends where their friends have commented. Integrated Multer for profile picture uploads and efficient media handling.",
   },
   {
-    id: 6,
+    id: 7,
     title: " AccuWeather",
     img: "https://www.creativefabrica.com/wp-content/uploads/2020/10/06/Kawaii-Cute-Weather-Vector-Clipart-Graphics-5893599-1.jpg",
     source: "https://github.com/shemil01/weather",
@@ -88,7 +97,7 @@ const items = [
     desc: "A dynamic weather app built with Next.js and TypeScript, offering real-time weather updates and a sleek, user-friendly interface. The app features a search bar for easy location lookup, animated backgrounds to match current conditions, and a forecast view to keep users prepared for upcoming weather.ensuring a smooth experience across devices.",
   },
   {
-    id:7 ,
+    id:8 ,
     title: " E-commerce backend",
     img: "/backend.png",
     link: "https://github.com/shemil01/backend-project",
