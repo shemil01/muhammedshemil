@@ -32,7 +32,7 @@ const sliderVariants = {
     x: "-220%",
     transition: {
       repeat: Infinity,
-      repeatType:'mirror',
+      repeatType: "mirror",
       duration: 20,
     },
   },
@@ -48,14 +48,15 @@ const Hero = () => {
           animate="animate"
         >
           <motion.h2 variants={textVariants}>Muhammed Shemil</motion.h2>
-          <motion.h1 variants={textVariants}>
-            Web developer and Web designer
-          </motion.h1>
+          <motion.h1 variants={textVariants}>Software Developer </motion.h1>
           <motion.div className="buttons" variants={textVariants}>
             <motion.button variants={textVariants}>
               <a href="#project">See the Latest Works</a>
             </motion.button>
-            <motion.button variants={textVariants}> <a  href="#contact">Contact Me</a> </motion.button>
+            <motion.button variants={textVariants}>
+              {" "}
+              <a href="#contact">Contact Me</a>{" "}
+            </motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}
@@ -69,7 +70,7 @@ const Hero = () => {
         className="slidingTextContainer"
         variants={sliderVariants}
         initial="initial"
-        animate='animate'
+        animate="animate"
       >
         Mern stack developer
       </motion.div>
