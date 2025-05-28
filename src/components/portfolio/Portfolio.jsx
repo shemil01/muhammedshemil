@@ -52,9 +52,25 @@ const items = [
     link: " https://spotify-client-psi-black.vercel.app",
     desc: "Developed a Spotify clone from scratch using the MERN stack and Tailwind CSS, replicating core features like JWT-based authentication, file uploads with Multer, and cloud storage via Cloudinary. Created playlist management, advanced search with letter suggestions, and built an admin dashboard for user and content management.",
   },
-
   {
     id: 3,
+    title: "Technohub Qatar",
+    img: "/technohub.png",
+    source: "https://github.com/shemil01/",
+    link: " https://www.technohubqatar.com/",
+    desc: "Built the official Techno Hub Qatar website using Next.js and Framer Motion, delivering a modern, high-performance, and responsive user experience. Techno Hub is a leading IT solutions provider in Qatar, committed to innovation and aligned with Qatar’s National Vision 2030. The project highlights include dynamic content sections, smooth animations, SEO optimization, and a scalable architecture to showcase services for public institutions and private enterprises.",
+  },
+
+  {
+    id: 4,
+    title: "Fresh Fruites ",
+    img: "/jeddahqatar.png",
+    source: "https://github.com/shemil01",
+    link: "https://www.jeddahqatar.com/",
+    desc: "Developed a high-performance corporate website for Jeddah Trading Co., a global leader in fresh produce distribution since 1982. Built with Next.js 15, the site highlights the company’s legacy, global reach, and robust infrastructure. Integrated dynamic content management, responsive design, and SEO best practices to showcase their services across the Middle East, Europe, and Asia. Optimized for performance and scalability to support international visibility and user engagement.",
+  },
+  {
+    id: 5,
     title: "Digital Marketing & Web Development Agency",
     img: "/zorvix.png",
     source: "https://github.com/shemil01",
@@ -63,7 +79,7 @@ const items = [
   },
   
   {
-    id: 4,
+    id: 6,
     title: " e-commerce website",
     img: "/plashoe.png",
     source: "https://github.com/shemil01/plashoe-frontend",
@@ -72,7 +88,7 @@ const items = [
   },
 
   {
-    id: 5,
+    id: 7,
     title: " The Daily Biz",
     img: "/blog.png",
     source: "https://github.com/shemil01/blog-app-nextjs",
@@ -81,7 +97,7 @@ const items = [
   },
 
   {
-    id: 6,
+    id: 8,
     title: " Social Media API",
     img: "/socialmedia.webp",
     source: "https://github.com/shemil01/social-media-api",
@@ -89,7 +105,7 @@ const items = [
     desc: "Developed a social media API using Express.js, MongoDB, and JWT for user authentication. Features include user registration, friend requests, post creation, comments, and likes. Users can view a feed with posts from friends and non-friends where their friends have commented. Integrated Multer for profile picture uploads and efficient media handling.",
   },
   {
-    id: 7,
+    id: 9,
     title: " AccuWeather",
     img: "https://www.creativefabrica.com/wp-content/uploads/2020/10/06/Kawaii-Cute-Weather-Vector-Clipart-Graphics-5893599-1.jpg",
     source: "https://github.com/shemil01/weather",
@@ -97,7 +113,7 @@ const items = [
     desc: "A dynamic weather app built with Next.js and TypeScript, offering real-time weather updates and a sleek, user-friendly interface. The app features a search bar for easy location lookup, animated backgrounds to match current conditions, and a forecast view to keep users prepared for upcoming weather.ensuring a smooth experience across devices.",
   },
   {
-    id:8 ,
+    id:10,
     title: " E-commerce backend",
     img: "/backend.png",
     link: "https://github.com/shemil01/backend-project",
