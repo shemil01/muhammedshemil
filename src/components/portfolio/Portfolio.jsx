@@ -34,18 +34,40 @@ const variants = {
 };
 
 const items = [
-
   {
     id: 1,
+    title: "Student Manager",
+    img: "/carbon.jpg",
+    source: "https://github.com/shemil01/",
+    link: "https://cms.carbongurukulam.in/",
+    desc: "Built a complete Student Manager platform using Next.js, Django, and GraphQL API. Designed separate dashboards for parents and admins to track and manage student records. Implemented interactive performance graphs, secure authentication, and efficient data handling for real-time insights and a smooth user experience.",
+  },
+  {
+    id: 2,
+    title: "Principalia Recruitment",
+    img: "/principalia.jpg",
+    source: "https://github.com/shemil01/",
+    link: "https://www.principalia.com",
+    desc: "Developed a recruitment team website for Principalia using Next.js, TypeScript, Node.js, and MongoDB. Implemented an admin dashboard for managing job postings and applications, while enabling users to apply directly through the platform. Focused on secure workflows, responsive design, and smooth user interactions.",
+  },
+  {
+    id: 3,
+    title: "Facelooks",
+    img: "/faclook.jpg",
+    source: "https://github.com/shemil01/",
+    link: "https://www.thefacelooks.com",
+    desc: "Created a premium salon website 'Facelook' using Next.js, TypeScript, Django, and GraphQL. Integrated appointment booking functionality for users with real-time availability. Built an admin dashboard to manage services, schedules, and clients, ensuring a modern, responsive, and seamless booking experience.",
+  },
+  {
+    id: 4,
     title: "Gallivant Charters Qatar",
     img: "/gallivent.png",
     source: "https://github.com/shemil01/",
     link: "https://www.gallivantchartersqatar.com",
-    desc: "Developed a full-stack Next.js application for Gallivant Charters Qatar, a live yacht rental platform. Implemented an admin dashboard for managing bookings, users, and yacht details. Integrated secure authentication, real-time availability updates, and optimized performance for a seamless user experience."
-}
-,
+    desc: "Developed a full-stack Next.js application for Gallivant Charters Qatar, a live yacht rental platform. Implemented an admin dashboard for managing bookings, users, and yacht details. Integrated secure authentication, real-time availability updates, and optimized performance for a seamless user experience.",
+  },
   {
-    id: 2,
+    id: 5,
     title: "Spotify clone",
     img: "/spotify.png",
     source: "https://github.com/shemil01/spotify-client",
@@ -53,7 +75,7 @@ const items = [
     desc: "Developed a Spotify clone from scratch using the MERN stack and Tailwind CSS, replicating core features like JWT-based authentication, file uploads with Multer, and cloud storage via Cloudinary. Created playlist management, advanced search with letter suggestions, and built an admin dashboard for user and content management.",
   },
   {
-    id: 3,
+    id: 6,
     title: "Technohub Qatar",
     img: "/technohub.png",
     source: "https://github.com/shemil01/",
@@ -62,7 +84,7 @@ const items = [
   },
 
   {
-    id: 4,
+    id: 7,
     title: "Fresh Fruites ",
     img: "/jeddahqatar.png",
     source: "https://github.com/shemil01",
@@ -70,16 +92,16 @@ const items = [
     desc: "Developed a high-performance corporate website for Jeddah Trading Co., a global leader in fresh produce distribution since 1982. Built with Next.js 15, the site highlights the company’s legacy, global reach, and robust infrastructure. Integrated dynamic content management, responsive design, and SEO best practices to showcase their services across the Middle East, Europe, and Asia. Optimized for performance and scalability to support international visibility and user engagement.",
   },
   {
-    id: 5,
+    id: 8,
     title: "Digital Marketing & Web Development Agency",
     img: "/zorvix.png",
     source: "https://github.com/shemil01",
     link: "https://www.zorvix.in/",
     desc: "Developed a modern and responsive digital marketing & web development agency website using Next.js 15. Optimized performance for faster load times, improving user engagement by 40%. Integrated SEO best practices, dynamic content management, and secure authentication for enhanced user experience.",
   },
-  
+
   {
-    id: 6,
+    id: 9,
     title: " e-commerce website",
     img: "/plashoe.png",
     source: "https://github.com/shemil01/plashoe-frontend",
@@ -88,7 +110,7 @@ const items = [
   },
 
   {
-    id: 7,
+    id: 10,
     title: " The Daily Biz",
     img: "/blog.png",
     source: "https://github.com/shemil01/blog-app-nextjs",
@@ -97,7 +119,7 @@ const items = [
   },
 
   {
-    id: 8,
+    id: 11,
     title: " Social Media API",
     img: "/socialmedia.webp",
     source: "https://github.com/shemil01/social-media-api",
@@ -105,7 +127,7 @@ const items = [
     desc: "Developed a social media API using Express.js, MongoDB, and JWT for user authentication. Features include user registration, friend requests, post creation, comments, and likes. Users can view a feed with posts from friends and non-friends where their friends have commented. Integrated Multer for profile picture uploads and efficient media handling.",
   },
   {
-    id: 9,
+    id: 12,
     title: " AccuWeather",
     img: "https://www.creativefabrica.com/wp-content/uploads/2020/10/06/Kawaii-Cute-Weather-Vector-Clipart-Graphics-5893599-1.jpg",
     source: "https://github.com/shemil01/weather",
@@ -113,7 +135,7 @@ const items = [
     desc: "A dynamic weather app built with Next.js and TypeScript, offering real-time weather updates and a sleek, user-friendly interface. The app features a search bar for easy location lookup, animated backgrounds to match current conditions, and a forecast view to keep users prepared for upcoming weather.ensuring a smooth experience across devices.",
   },
   {
-    id:10,
+    id: 13,
     title: " E-commerce backend",
     img: "/backend.png",
     link: "https://github.com/shemil01/backend-project",

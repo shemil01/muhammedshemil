@@ -74,9 +74,7 @@ const Hero = () => {
       >
         Mern stack developer
       </motion.div>
-      <div className="imageContainer">
-        <img src="/img.png" alt="" />
-      </div>
+   
     </div>
   );
 };
